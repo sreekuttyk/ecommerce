@@ -1,19 +1,25 @@
+<html>
+    <head>
+
+    </head>
+
+<body>
 <section>
-        <div class="container  mt-5">
+        <div class="container  mt-3 ml-3">
             <div class="row">
                 {{#each products}}
                 <div class="col-md-3 p-5">
-                    <div class="card" style="width: 15rem; height:250px">
-                        <img src="{{this.image}}">
+                    <div class="card" style="width: 16rem; height:500px">
+                        <img  class="card-img-top mx-auto d-block"src="/productimages/{{this._id}}.jpg" style="height: 400px;width:200px">
                             
-                        <div class="card-body">
-                            <h5 class="card-title">{{this.Name}}</h5>
-                            <p class="card-text">Rs.{{this.Price}}
+                        <div class="card-body" >
+                            <h5 class="card-title" style="text-align: center;color:black">{{this.Name}}</h5>
+                            <p class="card-text" style="text-align: center;color:black">Rs.{{this.Price}}
                             </p>
-                            <p class="card-text">{{this.Description}}
+                            <p class="card-text"style="text-align: center;color:black">{{this.Description}}
                             </p>
                             
-                            <button onclick="addtocart('{{this._id}}')" class="btn btn-primary">Add to Cart</button>
+                            <button onclick="addtocart('{{this._id}}')" class="ml-5" style="margin-top: 10px ;background-color:lightcoral;border:none;color:black;text-align:center;display:inline-block;border-radius:2px">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -26,4 +32,6 @@
     <script>
         
     </script>
+    </body>
+    </html>
     

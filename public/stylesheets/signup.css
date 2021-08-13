@@ -1,0 +1,16 @@
+.signup{
+    text-align: center;
+    margin-top: 50px;
+}
+.form-control{
+    width:300px;
+    height: 30px;
+   
+    
+    border-radius: 3px;
+    padding-left: 8px;
+}
+.sign{
+    margin-left: 550px;
+    margin-top: 50px;
+}
